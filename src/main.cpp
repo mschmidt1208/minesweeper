@@ -10,6 +10,8 @@
 
 int main(int argv, char** argc)
 {
+    
+    printf("Ficken für Geld");
 
 
     return 0;
