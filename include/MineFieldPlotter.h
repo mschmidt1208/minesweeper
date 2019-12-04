@@ -8,6 +8,9 @@
 //
 //
 
+// LOCAL INCLUDES
+#include "AbstractMineFieldData.h"
+
 // SYSTEM INCLUDES
 #include <stdio.h>
 
@@ -21,12 +24,19 @@ public:
     MineFieldPlotter();
     // ~MineFieldPlotter();
 
-private:
-    // Plotting
-    //---------------
     void plotField();
 
-    
+private:    // Methods
+    // Plotting
+    //---------------    
+    void plotFirstRow(int width);
+    void plotLastRow(int width);
+
+
+private:    // Member variables
+    AbstractMineFieldData* m_mineFieldData;
+
+
 };
 
 

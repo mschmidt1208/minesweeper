@@ -8,15 +8,21 @@
 //
 //
 
+// SYSTEM INCLUDES
+#include <vector>
+#include <utility>
 
 class AbstractMineFieldData
 {
-private:
-    /* data */
 public:
     // Life Cycle
     //----------------------
     AbstractMineFieldData();
+
+    virtual int getFieldWidth() = 0;
+    virtual int getFieldHeight() = 0;
+    
+    virtual std::vector<std::pair<int,int>>& getMineCoords() = 0;
 };
 
 

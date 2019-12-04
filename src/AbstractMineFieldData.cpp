@@ -14,6 +14,6 @@
 // Life Cycle
 //--------------------------------------
 
-AbstractMineFieldData::AbstractMineFieldData(/* args */)
+AbstractMineFieldData::AbstractMineFieldData()
 {
 }
