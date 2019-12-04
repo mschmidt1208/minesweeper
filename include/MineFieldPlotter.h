@@ -24,18 +24,13 @@ public:
     MineFieldPlotter();
     // ~MineFieldPlotter();
 
-    void plotField();
+    void plotField(AbstractMineFieldData* mineFieldData);
 
 private:    // Methods
     // Plotting
     //---------------    
-    void plotFirstRow(int width);
-    void plotLastRow(int width);
-
-
-private:    // Member variables
-    AbstractMineFieldData* m_mineFieldData;
-
+    void plotFirstRow(const unsigned int width);
+    void plotLastRow(const unsigned int width);
 
 };
 

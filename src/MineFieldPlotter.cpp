@@ -26,43 +26,49 @@ MineFieldPlotter::MineFieldPlotter()
 // Plotting
 //--------------------------------------
 
-void MineFieldPlotter::plotField()
+// Better with ostream???
+
+void MineFieldPlotter::plotField(AbstractMineFieldData* mineFieldData)
 {
-    int fieldWidth = m_mineFieldData->getFieldWidth();
-    int fieldHeigth = m_mineFieldData->getFieldHeight();
-    std::vector<std::pair<int, int>> mineCoords = m_mineFieldData->getMineCoords();
+    unsigned int fieldWidth = mineFieldData->getFieldWidth();
+    unsigned int fieldHeigth = mineFieldData->getFieldHeight();
+    std::vector<std::pair<unsigned int, unsigned int>> mineCoords = mineFieldData->getMineCoords();
 
     plotFirstRow(fieldWidth);
 
-    for (unsigned int row = 0; row < fieldWidth; ++row)
+    for (unsigned int row = 0; row < fieldHeigth; ++row)
     {
-        for (unsigned int col = 0; col < fieldHeigth; ++col)
-        {
+        std::cout << "│";
 
+        for (unsigned int col = 0; col < fieldWidth; ++col)
+        {
+            std::cout << " •";
         }
+
+        std::cout << " │" << std::endl;;
     }
 
     plotLastRow(fieldWidth);
 }
 
 
-void MineFieldPlotter::plotFirstRow(int width)
+void MineFieldPlotter::plotFirstRow(const unsigned int width)
 {
     std::cout << "┌";
-    for (int i = 0; i < width; ++i)
-        std::cout << "─";
+    for (unsigned int i = 0; i < width; ++i)
+        std::cout << "──";
 
-    std::cout << "┐" << std::endl;
+    std::cout << "─┐" << std::endl;
 }
 
 
-void MineFieldPlotter::plotLastRow(int width)
+void MineFieldPlotter::plotLastRow(const unsigned int width)
 {
     std::cout << "└";
-    for (int i = 0; i < width; ++i)
-        std::cout << "─";
+    for (unsigned int i = 0; i < width; ++i)
+        std::cout << "──";
 
-    std::cout << "┘" << std::endl;
+    std::cout << "─┘" << std::endl;
 }
 
 

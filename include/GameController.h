@@ -8,6 +8,11 @@
 //
 //
 
+// LOCAL INCLUDES
+#include "MineFieldData.h"
+#include "MineFieldPlotter.h"
+
+
 
 class GameController
 {
@@ -16,6 +21,16 @@ public:
 //-------------------
     GameController();
     ~GameController();
+
+// Game
+//--------------------
+    void initialize();
+    void runGame();
+
+private:
+    MineFieldData* m_mineFieldData;
+    MineFieldPlotter* m_mineFieldPlotter;
+
 };
 
 

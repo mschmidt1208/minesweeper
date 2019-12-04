@@ -15,8 +15,17 @@
 //--------------------------------------
 
 MineFieldData::MineFieldData()
+: m_width(0), m_height(0), m_numberOfMines(0)
 {
+
 }
 
+MineFieldData::MineFieldData(unsigned int width, unsigned int heigth, unsigned int numberOfMines)  
+: m_width(width), m_height(heigth), m_numberOfMines(numberOfMines)
+{}
 
 
+MineFieldData::~MineFieldData()
+{
+    
+}

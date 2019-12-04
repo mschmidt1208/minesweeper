@@ -17,12 +17,13 @@ class AbstractMineFieldData
 public:
     // Life Cycle
     //----------------------
-    AbstractMineFieldData();
+    // AbstractMineFieldData();
+    virtual ~AbstractMineFieldData();
 
-    virtual int getFieldWidth() = 0;
-    virtual int getFieldHeight() = 0;
+    virtual const unsigned int getFieldWidth() = 0;
+    virtual const unsigned int getFieldHeight() = 0;
     
-    virtual std::vector<std::pair<int,int>>& getMineCoords() = 0;
+    virtual const std::vector<std::pair<unsigned int, unsigned int>>& getMineCoords() = 0;
 };
 
 
