@@ -29,9 +29,6 @@ void MineFieldPlotter::plotField()
 
 
 
-
-­
-
 /*
 ─
 │
