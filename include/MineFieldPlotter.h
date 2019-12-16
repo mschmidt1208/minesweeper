@@ -9,7 +9,7 @@
 //
 
 // LOCAL INCLUDES
-#include "AbstractMineFieldData.h"
+
 
 // SYSTEM INCLUDES
 #include <stdio.h>
@@ -24,7 +24,7 @@ public:
     MineFieldPlotter();
     // ~MineFieldPlotter();
 
-    void plotField(AbstractMineFieldData* mineFieldData);
+    // void plotBoard(AbstractMineFieldData* mineFieldData);
 
 private:    // Methods
     // Plotting

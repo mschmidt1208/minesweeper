@@ -27,8 +27,8 @@ MineFieldPlotter::MineFieldPlotter()
 //--------------------------------------
 
 // Better with ostream???
-
-void MineFieldPlotter::plotField(AbstractMineFieldData* mineFieldData)
+/*
+void MineFieldPlotter::plotBoard(AbstractMineFieldData* mineFieldData)
 {
     unsigned int fieldWidth = mineFieldData->getFieldWidth();
     unsigned int fieldHeigth = mineFieldData->getFieldHeight();
@@ -70,7 +70,7 @@ void MineFieldPlotter::plotLastRow(const unsigned int width)
 
     std::cout << "─┘" << std::endl;
 }
-
+*/
 
 /*
 ─

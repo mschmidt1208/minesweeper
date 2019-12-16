@@ -61,8 +61,8 @@ void GameController::initialize()
     std::cout << "How many mines? ";
     std::cin >> numberOfMines;
 
-    m_mineFieldData->setWidth(width);
-    m_mineFieldData->setHeight(height);
+    // m_mineFieldData->setWidth(width);
+    // m_mineFieldData->setHeight(height);
 
 
 }
@@ -71,7 +71,7 @@ void GameController::initialize()
 void GameController::runGame()
 {
 
-    m_mineFieldPlotter->plotField(m_mineFieldData);
+    // m_mineFieldPlotter->plotBoard(m_mineFieldData);
 
 
 

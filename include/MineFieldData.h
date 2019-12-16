@@ -9,18 +9,20 @@
 //
 
 // LOCAL INCLUDES
-#include "AbstractMineFieldData.h"
 
 // SYSTEM INCLUDES
 #include <vector>
 #include <utility>
 
-class MineFieldData : public AbstractMineFieldData
+
+
+
+
+class MineFieldData
 {
 public:
     // Life Cycle
     //--------------
-    MineFieldData();
     MineFieldData(unsigned int width, unsigned int heigth, unsigned int numberOfMines);
     ~MineFieldData();
 
@@ -33,9 +35,6 @@ public:
 
     // Public Operations
     //--------------------------
-    inline void setWidth(const unsigned int width) { m_width = width; }
-    inline void setHeight(const unsigned int height) { m_height = height; }
-    
 
 private:    // Methods
     // create mine coordinates
