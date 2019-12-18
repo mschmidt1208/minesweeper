@@ -30,8 +30,8 @@ MineFieldPlotter::MineFieldPlotter()
 /*
 void MineFieldPlotter::plotBoard(AbstractMineFieldData* mineFieldData)
 {
-    unsigned int fieldWidth = mineFieldData->getFieldWidth();
-    unsigned int fieldHeigth = mineFieldData->getFieldHeight();
+    unsigned int fieldWidth = mineFieldData->numberOfCols();
+    unsigned int fieldHeigth = mineFieldData->numberOfRows();
     std::vector<std::pair<unsigned int, unsigned int>> mineCoords = mineFieldData->getMineCoords();
 
     plotFirstRow(fieldWidth);
